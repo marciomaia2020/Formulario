@@ -31,6 +31,9 @@ Dica:   Na pasta css deverão constar os arquivos *.css
 
 3º CRIE O FORMULARIO (a linguagem aqui utilizada será o HTML, CSS, W3.CSS E JavaScript)
 
+4º CRIE O BANCO DE DADOS
+
+
 
 
 
