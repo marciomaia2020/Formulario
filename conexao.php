@@ -6,8 +6,14 @@ $senha = "";
 $dbname = "cadastro";
 
 
-
-//Create the connection
+// Create connection
 $conn = new mysqli($servidor, $usuario, $senha, $dbname);
+
+
+// Check connection
+if ($conn->connect_error) {
+  die("A conexão falhou: " . $conn->connect_error);
+}
+
 
 ?>

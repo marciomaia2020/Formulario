@@ -36,15 +36,17 @@ Dica:   Na pasta css deverão constar os arquivos *.css
 create database cadastro;
 
 
-create table pessoas (
-nome varchar (30),
-idade tinyint (2),
-sexo char (1),
+CREATE TABLE pessoas (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+nome varchar(30) NOT NULL,
+idade tinyint(30) NOT NULL,
+sexo char(1),
 peso float,
 altura float,
-nacionalidade varchar (20)
+nacionalidade varchar (50),
+mensagem varchar (255),
+reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
-
 
 
 
