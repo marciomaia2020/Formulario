@@ -5,7 +5,7 @@
 
  Abaixo segue a descrição detalhada de como ele foi feito afim de ajudar outros estudantes.
 
- O passo a passo foi realmete bem definido e criado por mim
+ O passo a passo foi definido e criado por mim
 
 1º GUITHUB DESKTOP 
 a) crie o repositório (Formulário)
@@ -25,13 +25,13 @@ as informações para a edição destes arquivos não serão informados aqui est
 
 Dica:   Na pasta css deverão constar os arquivos *.css
         Na pasta js deverão constas os arquivos *.js
-        Na pasta php deverão constar os arquivos *.php
+        Na pasta php deverão constar os arquivos *.php (opcional)
         Na pasta img deverão constar os arquivos *.jpg *.png ou qualquer outro tipo que desejar
 
 
 3º CRIE O FORMULARIO (a linguagem aqui utilizada será o HTML, CSS, W3.CSS E JavaScript)
 
-4º CRIE O BANCO DE DADOS
+4º CRIE O BANCO DE DADOS (MySQL Workbench) Criado a conexão com o local host
 
 create database cadastro;
 
