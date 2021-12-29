@@ -28,7 +28,7 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 
 
-
+<a href="index.html">Voltar</a>
 
 
 

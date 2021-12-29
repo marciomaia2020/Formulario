@@ -39,8 +39,8 @@ create database cadastro;
 CREATE TABLE pessoas (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 nome varchar(30) NOT NULL,
-idade tinyint(30) NOT NULL,
-sexo char(1),
+idade varchar(30) NOT NULL,
+sexo varchar(8),
 peso float,
 altura float,
 nacionalidade varchar (50),
