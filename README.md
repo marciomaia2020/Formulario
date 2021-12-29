@@ -33,6 +33,28 @@ Dica:   Na pasta css deverão constar os arquivos *.css
 
 4º CRIE O BANCO DE DADOS
 
+create database cadastro;
+
+
+create table pessoas (
+nome varchar (30),
+idade tinyint (2),
+sexo char (1),
+peso float,
+altura float,
+nacionalidade varchar (20)
+);
+
+
+
+
+Será nescessário apenas dois arquivos:
+1 para criar a conexão com o banco de dados (conciderando que o banco e as tabelas já foram criados)
+2 para capturar as informações inserida no formulário, lembrando que neste arquivo será incluso o arquivo que faz a conexão com o banco 
+Obs: Veja os arquivos conexao.php e salva-mensagem.php
+
+
+
 
 
 
