@@ -1,6 +1,6 @@
 <?php
 
-include_once ('php/conexao.php');
+include_once ('conexao.php');
 
 // Receive the data  
 $nome = $_POST['nome'];
@@ -11,10 +11,10 @@ $altura = $_POST['altura'];
 $nacionalidade = $_POST['nacionalidade'];
 
 
-$sql = "INSERT INTO cadastro (nome, idade, sexo, peso, altura, nacionalidade) 
-VALUES ('$nome','$idade','$sexo','$peso','$altura'$nacionalidade)";
+$sql = "INSERT INTO pessoas (nome, idade, sexo, peso, altura, nacionalidade) 
+VALUES ('$nome','$idade','$sexo','$peso','$altura','$nacionalidade')";
 
-
+/*
 if ($conn->query($sql) === TRUE) {
     echo "Novo registro criado com sucesso!";
   } else {
@@ -23,6 +23,6 @@ if ($conn->query($sql) === TRUE) {
   
   $conn->close();
 
-
+*/
 
 ?>
