@@ -52,7 +52,61 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 
 Será nescessário apenas dois arquivos:
 1 para criar a conexão com o banco de dados (conciderando que o banco e as tabelas já foram criados)
+
+
+<?php
+
+$servidor = "localhost";
+$usuario = "root";
+$senha = "";
+$dbname = "cadastro";
+
+
+// Create connection
+$conn = new mysqli($servidor, $usuario, $senha, $dbname);
+
+
+// Check connection
+if ($conn->connect_error) {
+  die("A conexão falhou: " . $conn->connect_error);
+}
+
+
+?>
+
+
 2 para capturar as informações inserida no formulário, lembrando que neste arquivo será incluso o arquivo que faz a conexão com o banco 
+
+<?php
+
+include_once ('conexao.php');
+
+// Receive the data  
+$nome = $_POST['nome'];
+$idade = $_POST['idade'];
+$sexo = $_POST['sexo'];
+$peso = $_POST['peso'];
+$altura = $_POST['altura'];
+$nacionalidade = $_POST['nacionalidade'];
+$mensagem = $_POST['mensagem'];
+
+
+$sql = "INSERT INTO pessoas (nome, idade, sexo, peso, altura, nacionalidade, mensagem) 
+VALUES ('$nome','$idade','$sexo','$peso','$altura','$nacionalidade','$mensagem')";
+
+
+if ($conn->query($sql) === TRUE) {
+  echo "Novo registro criado com sucesso!";
+} else {
+  echo "Erro: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
+
+?>
+
+
 Obs: Veja os arquivos conexao.php e salva-mensagem.php
 
 
