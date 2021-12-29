@@ -107,7 +107,7 @@ $conn->close();
 ?>
 
 
-Obs: Veja os arquivos conexao.php e salva-mensagem.php
+Obs: Veja os arquivos conexao.php e salva-mensagem.php estão na raiz.
 
 
 
